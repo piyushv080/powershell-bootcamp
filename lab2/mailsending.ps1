@@ -17,11 +17,11 @@ Get-Credential | Export-Clixml -path "C:\Users\yellepeddy.laksh\OneDrive - HCL T
 
 #####################################################################################################
 
-$credential = Import-Clixml -Path "C:\Users\yellepeddy.laksh\OneDrive - HCL Technologies Ltd\Desktop\GET 22 Batch\Password New\pwd_new.xml"
+$credential = Import-Clixml -Path "C:\Users\piyush_verma\OneDrive - HCL Technologies Ltd\Desktop\GET 22 Batch\Password New\pwd_new.xml"
 $health = Get-PhysicalDisk | Sort Size | FT FriendlyName, Size, MediaType, SpindleSpeed, HealthStatus, OperationalStatus -AutoSize |Out-String
-$From = "manasa2702@outlook.com"
-$To = "alinahussain07@gmail.com","hg096724@gmail.com","kowsalyas0226@gmail.com"
-$Cc = "kowsalyas0226@gmail.com"
+$From = ""
+$To = "","",""
+$Cc = ""
 $Subject = "Health "
 $Body = "$health"
 $SMTPServer = "smtp.outlook.com"
